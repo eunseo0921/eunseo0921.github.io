@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'DungGeunMo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box; color: #222222;
+}
+body,html{
+    font-family: 'DungGeunMo'; background: url('../images/bg.jpg') no-repeat;
+}
+
+.wrap{
+    width: 1125px; height: 900px; border: 3px solid #636363; background: #fff; border-radius: 10px; box-sizing: content-box;
+    position: absolute; top: 50%; left: 50%; margin-top: -453px; margin-left: -565.5px; box-shadow: rgba(0, 0, 0, 0.4) 5px 5px 3px;
+}
+#tab{
+    width: 1185px; height: 108px; position: relative;
+}
+input{
+    display: none;
+}
+label{
+    display: block; height: 111px; float: left; border: 3px solid #636363; font-size: 30px; text-align: center; line-height: 105px;
+    position: absolute; top: -3px; left: -3px; cursor: pointer;
+}
+.tb_home{
+    width: 252px; border-radius: 10px 0 0 0;
+}
+.tb_about{
+    width: 271px; margin-left: 249px;
+}
+.tb_portfolio{
+    width: 331px; margin-left: 517px;
+}
+.tb_contact{
+    width: 286px; border-radius: 0 10px 0 0; margin-left: 845px;
+}
+
+#home:checked ~ .tb_home{
+    background: #FFEA80; border: 3px solid #AA8900; color: #AA8900; z-index: 999;
+}
+#about:checked ~ .tb_about{
+    background: #FFEA80; border: 3px solid #AA8900; color: #AA8900; z-index: 999;
+}
+#portfolio:checked ~ .tb_portfolio{
+    background: #FFEA80; border: 3px solid #AA8900; color: #AA8900; z-index: 999;
+}
+#contact:checked ~ .tb_contact{
+    background: #FFEA80; border: 3px solid #AA8900; color: #AA8900; z-index: 999;
+}
+
+#contents{
+    width: 1125px; height: 792px;
+    /* overflow: hidden; */
+}
+.ctt_wrap{
+    width: 500%; height: 100%;
+}
+.ctt_wrap > div{
+    width: 1125px; height: 792px; float: left;
+}
+.ctt_home{
+    position: relative; padding-left: 586px; padding-top: 246px; font-size: 24px;
+}
+.ctt_home > img{
+    position: absolute; top: 207px; left: 239px;
+}
+.ctt_home > div{
+    margin-bottom: 24px;
+}
