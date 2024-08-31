@@ -1,68 +1,127 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="kr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>개인홈페이지</title>
-    <link rel="stylesheet" href="css/reset.css">
+    <title>leeeunseo</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="script/jquery-3.1.1.js"></script>
-    <script src="script/jquery-ui-1.10.3.custom.min.js"></script>
-    <script src="script/script.js"></script>
+    <script src="https://kit.fontawesome.com/4b36f681da.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="wrap">
-        <div id="tab">
-            <input type="radio" name="tab" id="home">
-            <input type="radio" name="tab" id="about">
-            <input type="radio" name="tab" id="portfolio">
-            <input type="radio" name="tab" id="contact">
-            <label for="home" class="tb_home">HOME</label>
-            <label for="about" class="tb_about">ABOUT</label>
-            <label for="portfolio" class="tb_portfolio">PORTFOLIO</label>
-            <label for="contact" class="tb_contact">CONTACT</label>
+    <header>
+        <a href="#">
+            <img src="img/logo.png" alt="my logo">
+        </a>
+    </header>
+
+    <input type="radio" name="tab" id="home" checked>
+    <input type="radio" name="tab" id="about">
+    <input type="radio" name="tab" id="ptfl">
+    <input type="radio" name="tab" id="ctt">
+
+    <label for="home" class="tb_home">
+        <div class="wrap">
+            <span>HOME</span>
         </div>
-        <div id="contents">
-            <div class="ctt_wrap">
-                <div class="ctt_main">
-
-                </div>
-                <div class="ctt_home">
-                    <img src="images/home_black_03.jpg" alt="증명사진 흑백">
-                    <img src="images/home_03.jpg" alt="증명사진" class="color">
-                    <div>이름 : 이은서</div>
-                    <div>생년월일 : 2000.09.21</div>
-                    <div>전화번호 : 010-6431-8497</div>
-                    <div>
-                        주소 : 광주광역시 광산구 <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;수완동 모아엘가<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(수완로 33번길 76)
-                    </div>
-                </div>
-                <div class="ctt_about">
-                    <div>
-                        <h1>활용 가능 프로그램</h1>
-
-                    </div>
-                    <div>
-                        <h1>자격증</h1>
-                        &nbsp;&nbsp;웹디자인기능사
-                    </div>
-                    <div class="swot">
-                        <button>S</button>
-                        <div></div>
-                        <button>W</button>
-                        <div></div>
-                        <button>O</button>
-                        <div></div>
-                        <button>T</button>
-                        <div></div>
-                    </div>
-                </div>
-                <div class="ctt_portfolio"></div>
-                <div class="ctt_contact"></div>
-            </div>
+    </label>
+    <div class="tb_box bx_home">
+        <img src="img/myphoto.JPG" alt="증명사진">
+        <div>
+            <img src="img/account_circle_24dp_333.png" alt="account">
+            <img src="img/cake_24dp_333.png" alt="account">
+            <img src="img/call_24dp_333.png" alt="account">
+            <img src="img/home_24dp_333.png" alt="account">
+        </div>
+        <div>
+            이은서<br>
+            2000.09.21 <br>
+            010.6431.8497 <br>
+            수완로 33번길 76
         </div>
     </div>
+
+    <label for="about" class="tb_about">
+        <div class="wrap">
+            <span>ABOUT</span>
+        </div>
+    </label>
+    <div class="tb_box bx_about">
+        <div>
+            <h2>Strengths</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div>
+            <h2>Weaknesses</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div>
+            <h2>Skills</h2>
+            <ul>
+                <li>photoshop</li>
+                <li>Illustrator</li>
+                <li>After Effects</li>
+                <li>Premiere</li>
+                <li>Adobe XD</li>
+                <li>Web Publishing(HTML, CSS)</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Certificates</h2>
+            <ul>
+                <li>웹디자인기능사</li>
+                <li>ACP Photoshop</li>
+                <li>ACP Illustrator</li>
+                <li>GTQ 1급</li>
+                <li>GTQi 1급</li>
+                <li>컴퓨터그래픽스운용기능사</li>
+            </ul>
+        </div>
+    </div>
+    
+    <label for="ptfl" class="tb_ptfl">
+        <div class="wrap">
+            <span>PORTFOLIO</span>
+        </div>
+    </label>
+    <div class="tb_box bx_ptfl">
+        <div class="ptfl1">
+            <img src="img/portfolio1.jpg" alt="portfolio1">
+            <img src="img/portfolio2.jpg" alt="portfolio2">
+            <img src="img/portfolio3.jpg" alt="portfolio3">
+        </div>
+        <div class="ptfl2">
+            <img src="img/portfolio4.png" alt="portfolio4">
+            <img src="img/portfolio5.jpg" alt="portfolio5">
+            <img src="img/portfolio6.jpg" alt="portfolio6">
+            <img src="img/portfolio7.jpg" alt="portfolio7">
+        </div>
+        <div class="ptfl3">
+            <img src="img/portfolio8.jpg" alt="portfolio8">
+            <img src="img/portfolio9.jpg" alt="portfolio9">
+        </div>
+    </div>
+    
+    <label for="ctt" class="tb_ctt">
+        <div class="wrap">
+            <span>CONTACT</span>
+        </div>
+    </label>
+    <div class="tb_box bx_ctt">
+        <img src="img/myphoto2.png" alt="셀카">
+        <h3>leeeunseo0921@naver.com</h3>
+    </div>
+
 </body>
 </html>
