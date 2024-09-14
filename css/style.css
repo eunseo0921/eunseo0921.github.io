@@ -1,73 +1,182 @@
-@font-face {
-    font-family: 'DungGeunMo';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
+/*  font-family: "Noto Sans KR", sans-serif;
+font-family: "Wittgenstein", serif; */
 *{
-    box-sizing: border-box; color: #222222;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 20px;
 }
-body,html{
-    font-family: 'DungGeunMo'; background: url('../images/bg.jpg') no-repeat;
+ul,ol{
+    list-style: none;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+body{
+    color: #333;
+    font-family: "Noto Sans KR", sans-serif;
 }
 
-.wrap{
-    width: 1125px; height: 900px; border: 3px solid #636363; background: #fff; border-radius: 10px; box-sizing: content-box;
-    position: absolute; top: 50%; left: 50%; margin-top: -453px; margin-left: -565.5px; box-shadow: rgba(0, 0, 0, 0.4) 5px 5px 3px;
+
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #025e73;
+    padding-top: 5px;
 }
-#tab{
-    width: 1185px; height: 108px; position: relative;
+header a{
+    display: block;
+    width: 200px;
+    margin: 0 auto;
 }
+header img{
+    width: 100%;
+}
+
 input{
     display: none;
 }
+
 label{
-    display: block; height: 111px; float: left; border: 3px solid #636363; font-size: 30px; text-align: center; line-height: 105px;
-    position: absolute; top: -3px; left: -3px; cursor: pointer;
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-family: "Wittgenstein", serif;
+    font-weight: 700;
+    color: #025e73;
+    background-color: #d2d7d9;
+    border-bottom: 2px solid #025e73;
+    cursor: pointer;
 }
-.tb_home{
-    width: 252px; border-radius: 10px 0 0 0;
+label .wrap{
+    width: 1200px;
+    margin: 0 auto;
 }
-.tb_about{
-    width: 271px; margin-left: 249px;
-}
-.tb_portfolio{
-    width: 331px; margin-left: 517px;
-}
-.tb_contact{
-    width: 286px; border-radius: 0 10px 0 0; margin-left: 845px;
-}
-
-#home:checked ~ .tb_home{
-    background: #FFEA80; border: 3px solid #AA8900; color: #AA8900; z-index: 999;
-}
-#about:checked ~ .tb_about{
-    background: #FFEA80; border: 3px solid #AA8900; color: #AA8900; z-index: 999;
-}
-#portfolio:checked ~ .tb_portfolio{
-    background: #FFEA80; border: 3px solid #AA8900; color: #AA8900; z-index: 999;
-}
-#contact:checked ~ .tb_contact{
-    background: #FFEA80; border: 3px solid #AA8900; color: #AA8900; z-index: 999;
+label span::before{
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url(../img/arrow.png) no-repeat;
+    background-size: 20px;
+    background-position: 0 7px;
 }
 
-#contents{
-    width: 1125px; height: 792px;
-    /* overflow: hidden; */
+.tb_box{
+    width: 1200px;
+    overflow: hidden;
+    margin: 25px auto;
+    display: none;
 }
-.ctt_wrap{
-    width: 500%; height: 100%;
+
+.bx_home{
+    width: 232px;
+    font-weight: 500;
 }
-.ctt_wrap > div{
-    width: 1125px; height: 792px; float: left;
+.bx_home>img{
+    width: 163px;
+    margin: 0 auto;
+    margin-bottom: 15px;
 }
-.ctt_home{
-    position: relative; padding-left: 586px; padding-top: 246px; font-size: 24px;
+.bx_home div{
+    float: left;
+    line-height: 35px;
+    margin-left: 10px;
 }
-.ctt_home > img{
-    position: absolute; top: 207px; left: 239px;
+.bx_home div img{
+    width: 27px;
+    height: 27px;
+    margin: 8px;
+    margin-top: 4px;
 }
-.ctt_home > div{
-    margin-bottom: 24px;
+
+.bx_about div{
+    width: 50%;
+    float: left;
+}
+.bx_about h2{
+    font-family: "Wittgenstein", serif;
+    color: #735736;
+    margin-bottom: 20px;
+}
+.bx_about ul{
+    list-style-type: circle;
+    margin-bottom: 25px;
+}
+.bx_about li{
+    margin-left: 22px;
+    font-size: 18px;
+}
+
+.bx_ptfl{
+    margin-bottom: 90px;
+}
+.bx_ptfl div{
+    float: left
+}
+.ptfl1{
+    width: 39%;
+}
+.ptfl2{
+    width: 61%;
+}
+.ptfl3{
+    width: 100%;
+}
+.bx_ptfl img{
+    width: 100%;
+    padding: 15px;
+}
+
+.bx_ctt img{
+    width: 320px;
+    height: 250px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.bx_ctt h3{
+    font-family: "Wittgenstein", serif;
+    font-style: italic;
+    text-align: center;
+}
+
+
+#home:checked ~ .bx_home{
+    display: block;
+}
+#home:checked ~ .tb_about{
+    position: fixed;
+    bottom: 80px;
+}
+#home:checked ~ .tb_ptfl{
+    position: fixed;
+    bottom: 40px;
+}
+#home:checked ~ .tb_ctt{
+    position: fixed;
+    bottom: 0;
+}
+#about:checked ~ .bx_about{
+    display: block;
+}
+#about:checked ~ .tb_ptfl{
+    position: fixed;
+    bottom: 40px;
+}
+#about:checked ~ .tb_ctt{
+    position: fixed;
+    bottom: 0;
+}
+#ptfl:checked ~ .bx_ptfl{
+    display: block;
+}
+#ptfl:checked ~ .tb_ctt{
+    position: fixed;
+    bottom: 0;
+}
+#ctt:checked ~ .bx_ctt{
+    display: block;
 }
