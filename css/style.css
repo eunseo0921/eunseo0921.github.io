@@ -75,7 +75,7 @@ label span::before{
 }
 
 .bx_home{
-    width: 232px;
+    width: 279px;
     font-weight: 500;
 }
 .bx_home>img{
@@ -97,6 +97,7 @@ label span::before{
 
 .bx_about div{
     width: 50%;
+    height: 231px;
     float: left;
 }
 .bx_about h2{
@@ -134,8 +135,7 @@ label span::before{
 }
 
 .bx_ctt img{
-    width: 320px;
-    height: 250px;
+    width: 250px;
     margin: 0 auto;
     margin-bottom: 10px;
 }
@@ -187,5 +187,8 @@ label span::before{
 @media screen and (max-width:1200px) {
     .tb_box{
         width: 100%;
+    }
+    .bx_home{
+        width: 279px;
     }
 }
