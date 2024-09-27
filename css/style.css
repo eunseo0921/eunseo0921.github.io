@@ -70,7 +70,7 @@ label span::before{
     width: 1200px;
     overflow: hidden;
     margin: 0 auto;
-    padding: 25px;
+    padding: 40px 25px;
     display: none;
 }
 
