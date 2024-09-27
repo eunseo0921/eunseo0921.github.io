@@ -70,7 +70,7 @@ label span::before{
     width: 1200px;
     overflow: hidden;
     margin: 0 auto;
-    padding: 40px 25px;
+    padding: 35px 25px;
     display: none;
 }
 
@@ -103,7 +103,7 @@ label span::before{
 .bx_about h2{
     font-family: "Wittgenstein", serif;
     color: #735736;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 .bx_about ul{
     list-style-type: circle;
