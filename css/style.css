@@ -143,12 +143,16 @@ label span::before{
 .ptfl2{
     width: 65%;
 }
-.ptfl3{
+.ptfl3 .ptfl4{
     width: 100%;
 }
 .bx_ptfl img{
     width: 100%;
     padding: 15px;
+}
+.ptfl3 img{
+    float: left;
+    width: 25%;
 }
 
 .bx_ctt{
@@ -249,4 +253,7 @@ label span::before{
     .ptfl2{
         width: 100%;
     }
+    .ptfl3 img{
+        width: 12.5%;
+    }    
 }
